@@ -1,143 +1,227 @@
-# ⚡ Wizzo — Site Web Électricien & Télématique (React + TypeScript + Vite)
+<div align="center">
 
-موقع ويب احترافي وفاخر لخدمات أعمال الكهرباء والتجهيزات، مصمم بأحدث التقنيات ويدعم اللغتين (الفرنسية والإنجليزيّة)، مع الوضع الداكن والفيزيائي (Dark/Light Mode)، ونموذج تواصل ذكي مرتبط بـ Vercel Serverless Functions و Resend.
+  <h1>⚡ WIZZO</h1>
+  <h3>Premium Electrician & Telematics Web Application</h3>
+
+  <p>
+    A state-of-the-art, luxury bilingual web platform for electrical and telematics services.<br />
+    Crafted with <b>React 19</b>, <b>TypeScript</b>, <b>Tailwind CSS v4</b>, <b>Framer Motion</b>, and <b>Vercel Serverless Functions</b>.
+  </p>
+
+  <p>
+    <a href="#-key-features">Key Features</a> •
+    <a href="#-tech-stack">Tech Stack</a> •
+    <a href="#-getting-started">Getting Started</a> •
+    <a href="#-environment-variables">Environment Variables</a> •
+    <a href="#-deployment">Deployment</a>
+  </p>
+
+  <p>
+    <img src="https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 19" />
+    <img src="https://img.shields.io/badge/TypeScript-6.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/Vite-8.2-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS-v4.3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+    <img src="https://img.shields.io/badge/Framer_Motion-13.1-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
+    <img src="https://img.shields.io/badge/Vercel-Serverless-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+    <img src="https://img.shields.io/badge/Resend-API-black?style=for-the-badge&logo=resend&logoColor=white" alt="Resend" />
+  </p>
+
+  <br />
+</div>
 
 ---
 
-## 🚀 التقنيات المستخدمة (Tech Stack)
+## 📌 Overview
 
-- **الفريمورك:** [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
-- **أداة البناء:** [Vite](https://vitejs.dev/)
-- **التصميم والإنيميشن:** [Tailwind CSS v4](https://tailwindcss.com/) + [Framer Motion](https://www.framer.com/motion/) + [Lucide Icons](https://lucide.dev/)
-- **إرسال البريد الإلكتروني (Backend):** Vercel Serverless Functions (`/api/contact`) + [Resend API](https://resend.com/)
+**Wizzo** is a high-end web application built for professional electrical contractors and telematics service providers. Designed with luxury visual aesthetics—featuring dark navy palettes, vibrant electric blue accents, glassmorphic UI elements, micro-animations, and fluid theme transitions.
 
----
-
-## 📌 مميزات المشروع
-
-1. **تصميم عصري وفخم:** دعم التنسيقات الحديثة كـ Glassmorphism و Micro-animations باللون الكحلي الداكن والأزرق الكهربي المضيء.
-2. **ثنائي اللغة (Bilingual FR / EN):** إمكانية التبديل الفوري بين اللغة الفرنسية والإنجليزيّة مع حفظ التفضيلات.
-3. **وضع رؤية متكيف (Dark / Light Theme):** تبديل سلس بين الوضع الداكن والفاتح مع تحسين تباين الأيقونات.
-4. **نموذج تواصل فعال (Contact Form):** إرسال واستقبال الرسائل مباشرة إلى بريد العميل الإلكتروني عبر خدمة Resend.
-5. **روابط تواصل سريعة:** اتصال مباشر برقم الهاتف، واتساب، وإنستغرام.
-6. **معرض الأعمال (Projects Showcase):** إمكانية استعراض صور المشاريع مع التمرير التلقائي.
+The application is completely bilingual (**French** & **English**), equipped with dynamic content switching, an interactive project showcase carousel, and a zero-config serverless contact workflow powered by **Resend** and **Vercel Serverless Functions**.
 
 ---
 
-## 📁 هيكل المشروع (Project Structure)
+## ✨ Key Features
+
+- 🎨 **Luxury Aesthetics & Micro-Animations**: Modern glassmorphism design system, ambient glow effects, smooth scroll interactions, and Framer Motion visual feedback.
+- 🌐 **Full Bilingual Support (i18n)**: Seamless real-time toggle between **French (FR)** and **English (EN)** with persistent state management.
+- 🌗 **Adaptive Dark & Light Themes**: Intelligent theme switcher with contrast optimization and persistent preference storage (`ThemeContext`).
+- 📬 **Serverless Contact Engine**: Integrated Vercel Serverless Function (`/api/contact`) backed by the **Resend API** for direct-to-inbox lead delivery.
+- 🖼️ **Dynamic Project Gallery**: Interactive showcase featuring automated image rotation on hover/touch, multi-photo lightboxes, and project filtering.
+- ⚡ **Blazing Fast Performance**: Powered by React 19 + Vite 8, achieving instant HMR, minimal bundle footprints, and high lighthouse scores.
+- 📱 **Responsive & Accessible Layout**: Carefully calibrated across ultra-wide monitors, tablets, and smartphones.
+
+---
+
+## 🛠️ Tech Stack
+
+### **Frontend Core**
+- **Framework:** [React 19](https://react.dev/)
+- **Language:** [TypeScript 6](https://www.typescriptlang.org/)
+- **Build Tool:** [Vite 8](https://vitejs.dev/)
+- **Routing:** [React Router v7](https://reactrouter.com/)
+
+### **Styling & Motion**
+- **CSS Engine:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Iconography:** [Lucide React](https://lucide.dev/)
+
+### **Backend & Services**
+- **Serverless Runtime:** Vercel Serverless API (`api/contact.js`)
+- **Transactional Email:** [Resend API](https://resend.com/)
+
+---
+
+## 📂 Project Architecture
 
 ```text
-electro-site/
-├── api/
-│   └── contact.js          # Vercel Serverless Function لإرسال البريد عبر Resend
-├── public/
-│   └── projects/           # صور المشاريع والملفات الاستاتيكية
-├── src/
-│   ├── components/         # المكونات الأساسية (Navbar, Hero, About, Projects, Contact, Footer...)
-│   │   └── profile/        # مكونات صفحة البروفايل (/profil)
-│   ├── context/            # إدارة الحالة (LanguageContext, ThemeContext)
-│   ├── data/               # البيانات والمعلومات الأساسية (content.ts)
-│   ├── i18n/               # نصوص الترجمة للغات (translations.ts)
-│   ├── pages/              # صفحات التطبيق (Home.tsx, Profile.tsx)
-│   └── index.css           # متغيرة التصميم والتنسيقات الأساسية
-├── vercel.json             # توجيه الروابط وتكوين SPA على Vercel
-├── .env                    # المتغيرات البيئية للمشروع
-├── package.json
-└── README.md
+WIZZO/
+├── 📁 api/
+│   └── contact.js          # Vercel Serverless Function for Resend API email dispatch
+├── 📁 public/
+│   └── 📁 projects/        # Static assets & client project media galleries
+├── 📁 src/
+│   ├── 📁 components/      # Modular UI components (Hero, Navbar, About, Projects, Contact, Footer)
+│   │   └── 📁 profile/     # Profile page components (/profil)
+│   ├── 📁 context/         # React Context providers (LanguageContext, ThemeContext)
+│   ├── 📁 data/            # Static dataset & project registries (content.ts)
+│   ├── 📁 i18n/            # Internationalization dictionaries (translations.ts)
+│   ├── 📁 pages/           # Application views (Home.tsx, Profile.tsx)
+│   ├── index.css           # Global CSS variables, custom utilities & Tailwind setup
+│   └── main.tsx            # Application entry point
+├── vercel.json             # Vercel routing rules & SPA configuration
+├── vite.config.ts          # Vite build parameters & aliases
+├── package.json            # Scripts & project dependencies
+└── README.md               # Project documentation
 ```
 
 ---
 
-## ⚙️ التشغيل المحلي (Local Development)
+## ⚙️ Getting Started
 
-1. **تثبيت الحزم والمكتبات:**
-   ```bash
-   npm install
-   ```
+### **Prerequisites**
+Ensure you have the following installed on your machine:
+- **Node.js** `>= 18.0.0`
+- **npm** `>= 9.0.0`
 
-2. **تشغيل سيرفر التطوير:**
-   ```bash
-   npm run dev
-   ```
+### **1. Clone the Repository**
+```bash
+git clone https://github.com/YOUR_USERNAME/WIZZO.git
+cd WIZZO
+```
 
-3. **إنشاء نسخة الإنتاج (Production Build):**
-   ```bash
-   npm run build
-   ```
+### **2. Install Dependencies**
+```bash
+npm install
+```
 
-4. **معاينة البناء المحلي:**
-   ```bash
-   npm run preview
-   ```
+### **3. Setup Environment Variables**
+Create a `.env` file in the root directory (or duplicate `.env.example`):
+```env
+RESEND_API_KEY=re_your_resend_api_key_here
+CLIENT_EMAIL=contact.wizzo.75@gmail.com
+```
 
----
+### **4. Start Local Development Server**
+```bash
+npm run dev
+```
+Open your browser and navigate to `http://localhost:5173`.
 
-## 🔑 المتغيرات البيئية (Environment Variables)
+### **5. Build & Preview for Production**
+```bash
+# Type check and build bundle
+npm run build
 
-عند رفع المشروع على Vercel، يجب إضافة المتغيرات البيئية التالية في إعدادات المشروع (Environment Variables):
-
-| المتغير | الوصف | مثال |
-| :--- | :--- | :--- |
-| `RESEND_API_KEY` | مفتاح API الخاص بخدمة Resend لإرسال الإيميلات | `re_xxxxxxxxx` |
-| `CLIENT_EMAIL` | الإيميل الذي ستصل عليه رسائل نموذج التواصل | `contact.wizzo.75@gmail.com` |
-
----
-
-## 🌐 خطوات الرفع على Vercel (Deployment Steps)
-
-### الطريقة الأولى: عن طريق GitHub (الموصى بها)
-
-1. **رفع الكود إلى حسابك في GitHub:**
-   - قم بإنشاء مستودع (Repository) جديد على GitHub.
-   - ارفع كود المشروع إليه:
-     ```bash
-     git init
-     git add .
-     git commit -m "Initial commit for production"
-     git branch -M main
-     git remote add origin https://github.com/USERNAME/REPOSITORY_NAME.git
-     git push -u origin main
-     ```
-
-2. **ربط المستودع بـ Vercel:**
-   - توجه إلى موقع [Vercel](https://vercel.com/) وقم بتسجيل الدخول بحساب GitHub.
-   - اضغط على **"Add New"** ثم اختر **"Project"**.
-   - اختر مستودع المشروع من القائمة واضغط **"Import"**.
-
-3. **إعدادات المشروع على Vercel (Project Configuration):**
-   - **Framework Preset:** اختر `Vite`.
-   - **Build Command:** `npm run build`
-   - **Output Directory:** `dist`
-   - **Environment Variables:** أضف المفاتيح التالية:
-     - `RESEND_API_KEY` = `مفتاح_resend_الخاص_بك`
-     - `CLIENT_EMAIL` = `contact.wizzo.75@gmail.com`
-
-4. **بدء النشر (Deploy):**
-   - اضغط على زر **"Deploy"**.
-   - خلال ثوانٍ معدودة سيكتمل الرفع وتحصل على رابط موقعك الحي (Live URL)!
+# Preview build locally
+npm run preview
+```
 
 ---
 
-### الطريقة الثانية: باستخدام Vercel CLI (مباشرة من التيرمينال)
+## 🔑 Environment Variables
 
-1. **تثبيت Vercel CLI:**
+The project requires the following environment variables for functional contact form email delivery:
+
+| Variable | Required | Description | Example |
+| :--- | :---: | :--- | :--- |
+| `RESEND_API_KEY` | **Yes** | API key generated from your [Resend Dashboard](https://resend.com/) | `re_123456789_abcdefg` |
+| `CLIENT_EMAIL` | **Yes** | Recipient email address where contact inquiries are sent | `contact.wizzo.75@gmail.com` |
+
+---
+
+## 🌐 Deployment
+
+### **Method 1: Vercel GitHub Integration (Recommended)**
+
+1. Push your repository to GitHub:
+   ```bash
+   git init
+   git add .
+   git commit -m "feat: initial commit"
+   git branch -M main
+   git remote add origin https://github.com/YOUR_USERNAME/WIZZO.git
+   git push -u origin main
+   ```
+
+2. Import to **Vercel**:
+   - Go to [Vercel Dashboard](https://vercel.com/new).
+   - Select your **WIZZO** GitHub repository.
+   - Configure framework preset as **Vite**.
+   - Add your **Environment Variables** (`RESEND_API_KEY` and `CLIENT_EMAIL`).
+   - Click **Deploy**.
+
+---
+
+### **Method 2: Vercel CLI**
+
+1. Install Vercel CLI globally:
    ```bash
    npm install -g vercel
    ```
 
-2. **تسجيل الدخول ورفع المشروع:**
+2. Deploy from your local workspace:
    ```bash
    vercel
    ```
-   - اتبع التعليمات في التيرمينال (اختر حسابك، وافق على الخيارات الافتراضية).
 
-3. **إضافة المتغيرات البيئية:**
+3. Add production environment variables:
    ```bash
    vercel env add RESEND_API_KEY
    vercel env add CLIENT_EMAIL
    ```
 
-4. **الرفع إلى البرودكشن النهائي (Production Deploy):**
+4. Deploy to production:
    ```bash
    vercel --prod
    ```
+
+---
+
+## 📸 Managing Project Photos
+
+To add or update project photos shown in the portfolio:
+
+1. Place image files (JPG, PNG, WebP) in `public/projects/<project-folder-name>/`.
+2. Register the project entry in `src/data/content.ts` under the `projects` array:
+   ```ts
+   {
+     id: 'kitchen-rewire',
+     category: 'kitchen',
+     title: { fr: 'Rénovation Cuisine', en: 'Kitchen Rewire' },
+     location: 'Paris, France',
+     description: { fr: '...', en: '...' },
+     services: { fr: ['Rénovation'], en: ['Renovation'] },
+     images: [
+       '/projects/kitchen-rewire/photo-1.jpg',
+       '/projects/kitchen-rewire/photo-2.jpg'
+     ],
+     imageAlt: { fr: 'Rénovation cuisine', en: 'Kitchen rewire' }
+   }
+   ```
+
+---
+
+## 📄 License & Credits
+
+Distributed under the **MIT License**. See `LICENSE` for more details.
+
+Designed & Built with ⚡ by **Wizzo Team**.
