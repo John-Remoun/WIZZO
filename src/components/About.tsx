@@ -12,11 +12,14 @@ export function About() {
         <Reveal>
           <div className="relative">
             <div className="rounded-2xl overflow-hidden aspect-[4/5] card-surface">
-              <img
-                src="/data/about/about.jpeg"
-                alt="Électricien professionnel au travail"
-                className="w-full h-full object-cover"
-              />
+              <picture>
+                <source media="(min-width: 768px)" srcSet="/data/about/about.jpeg" />
+                <img
+                  src="/data/about/about2.jfif"
+                  alt="Électricien professionnel au travail"
+                  className="w-full h-full object-cover"
+                />
+              </picture>
             </div>
           </div>
         </Reveal>
